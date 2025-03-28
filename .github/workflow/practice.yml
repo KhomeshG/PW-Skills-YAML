@@ -1,0 +1,20 @@
+#Practice file
+
+name : "Hello github action workflow"
+
+on :
+  push :
+    branches :
+      - master
+      - production
+      - main
+
+jobs :
+  print_words :
+    runs-on : ubuntu-latest
+    steps :
+      - name : print hello world
+        run : echo "Hello World"
+
+      - name : print current date
+        run : date
