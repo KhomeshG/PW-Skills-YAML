@@ -5,9 +5,7 @@ name : "Hello github action workflow"
 on :
   push :
     branches :
-      - master
-      - production
-      - main
+      - **
 
 jobs :
   print_words :
