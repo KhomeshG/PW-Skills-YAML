@@ -1,0 +1,13 @@
+name : "All branche push"
+
+on : 
+  push :
+    branches:
+      - "**"
+jobs : 
+  branch_name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show full github ref
+        run: echo "full ref"
+  
